@@ -3,48 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yataq Mebeli - Soliton Mebel</title>
-<link rel="stylesheet" href="style.css">
+<title>Soliton Mebel</title>
+
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f4f4;
+}
+
+header {
+    background:url('https://images.unsplash.com/photo-1615874959474-d609969a20ed');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1 {
+    font-size:48px;
+    margin:0;
+}
+
+header p {
+    font-size:20px;
+}
+
+nav {
+    background:#111;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a {
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    background:#333;
+}
+
+.container {
+    padding:60px 10%;
+}
+
+.category {
+    margin-bottom:70px;
+}
+
+.category h2 {
+    font-size:28px;
+    border-left:5px solid #111;
+    padding-left:10px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+
+.card {
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content {
+    padding:15px;
+    text-align:center;
+}
+
+.whatsapp-btn {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 18px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+footer {
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* Floating WhatsApp */
+.float {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:30px;
+    right:30px;
+    background:#25D366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 10px #999;
+    z-index:100;
+    line-height:60px;
+    text-decoration:none;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-<h1>Yataq Mebeli</h1>
+<h1>Soliton Mebel</h1>
+<p>Modern və Keyfiyyətli Mebel Kolleksiyası</p>
 </header>
 
 <nav>
-<a href="index.html">Ana səhifə</a>
-<a href="qonaq.html">Qonaq Mebeli</a>
-<a href="kunc.html">Künc Divanlar</a>
-<a href="divan.html">Divan Dəstləri</a>
-<a href="matras.html">Matraslar</a>
+<a href="#yataq">Yataq</a>
+<a href="#qonaq">Qonaq</a>
+<a href="#kunc">Künc Divan</a>
+<a href="#divan">Divan & Kreslo</a>
+<a href="#jurnal">Jurnal Masaları</a>
+<a href="#stul">Stullar</a>
+<a href="#matras">Matraslar</a>
+<a href="#baza">Bazalar</a>
 </nav>
 
 <div class="container">
 
-<!-- Model 1 -->
-<div class="category">
-<h2>Yataq Model 1</h2>
+<div class="category" id="yataq">
+<h2>Yataq Dəstləri</h2>
 <div class="grid">
-<div class="card"><img src="images/yataq1.jpg"><div class="card-content"><a class="whatsapp-btn" href="https://wa.me/994100000000" target="_blank">WhatsApp ilə sifariş</a></div></div>
-<div class="card"><img src="images/yataq2.png"><div class="card-content"><a class="whatsapp-btn" href="https://wa.me/994100000000" target="_blank">WhatsApp ilə sifariş</a></div></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<div class="card-content">
+<a class="whatsapp-btn" href="https://wa.me/994100000000" target="_blank">WhatsApp ilə sifariş</a>
 </div>
 </div>
-
-<!-- Model 2 -->
-<div class="category">
-<h2>Yataq Model 2</h2>
-<div class="grid">
-<div class="card"><img src="images/yataq3.png"><div class="card-content"><a class="whatsapp-btn" href="https://wa.me/994100000000" target="_blank">WhatsApp ilə sifariş</a></div></div>
-<div class="card"><img src="images/yataq4.png"><div class="card-content"><a class="whatsapp-btn" href="https://wa.me/994100000000" target="_blank">WhatsApp ilə sifariş</a></div></div>
 </div>
 </div>
 
 </div>
 
-<a href="https://wa.me/994100000000" class="float" target="_blank">💬</a>
 <footer>
+<p>Əlaqə: +994 10 000 00 00</p>
 <p>© 2026 Soliton Mebel</p>
 </footer>
+
+<a href="https://wa.me/994100000000" class="float" target="_blank">💬</a>
+
 </body>
 </html>
